@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Welcome to my calculator webpage!</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+      <link rel ="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="navbar navbar-fixed-top" >
+         <ul class="nav navbar-nav">
+            <li><a href="index.html">Age Calculator</a></li>
+            <li><a href="circleCalc.html">The Geometrizer</a></li>
+            <li><a href="lifeSupplyCalc.html">The Lifetime Supply Calculator</a></li>
+            <li><a href="tempCalc.html">The Temperature Conventer</a></li>
+         </ul>
+      </div>
+      <div class="jumbotron">
+         <div class="container">
+            <h1 align="center">The Age Calculator</h1>
+            <p align="center">Forgot how old you are? Calculate it!</p>
+         </div>
+      </div>
+	  
+      <div id="calc">
+         <div align = "center">
+         <h1>Calculate your age!</h1>
+         <br>
+         <h5>Current year: <input type="number" id="currentYear" value="0"></h5>
+         <h5>Year of birth: <input type="number" id="yearOfBirth" value="0"></h5>
+         <button onclick="calculateAge(document.getElementById('currentYear').value,document.getElementById('yearOfBirth').value)">Calculate</button>     
+         <h4> Аge:  <output id="myAge"></output></h4>
+      </div>
+	  
+      </div>
+   </body>
+</html>

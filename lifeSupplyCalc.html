@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Welcome to my calculator webpage!</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+      <link rel ="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="navbar navbar-fixed-top" >
+         <ul class="nav navbar-nav">
+            <li><a href="index.html">Age Calculator</a></li>
+            <li><a href="circleCalc.html">The Geometrizer</a></li>
+            <li><a href="lifeSupplyCalc.html">The Lifetime Supply Calculator</a></li>
+            <li><a href="tempCalc.html">The Temperature Conventer</a></li>
+         </ul>
+      </div>
+      <div class="jumbotron">
+      <div class="container">
+         <h1 align="center">The Lifetime Supply Calculator</h1>
+         <p align="center">Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!</p>
+      </div>
+      </div>
+      <div id="calc2">
+        <div align = "left">
+         <h1>Life supply calculator! </h1>
+         <br>
+         <h5>Age           : <input type="number" id="age" value="0"></h5>
+         <h5>Amount per day: <input type="number" id="amount" value="0"></h5>
+         <button onclick="calculateSupply(document.getElementById('age').value,document.getElementById('amount').value)">Calculate</button>  
+         <h4>Supply needed : <output id="supply"></output></h4>
+        </div>
+      </div>
+       
+   </body>
+</html>
